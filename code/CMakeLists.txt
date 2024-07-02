@@ -3,6 +3,8 @@ project(point)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
 set(CMAKE_BUILD_TYPE "Release")
 find_package(PCL 1.8 REQUIRED)
+set(CMAKE_CXX_STANDARD 14)  # Set C++14 standard
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #find_package(CSF REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system iostreams)
